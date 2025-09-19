@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LN Asesoría y Consultoría Empresarial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales de la página */
+        :root {
+            --color-primary: #007bff;
+            --color-dark: #333;
+            --color-light: #f4f4f4;
+            --color-white: #fff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-light);
+            color: var(--color-dark);
+        }
+
+        /* --- Barra de Navegación --- */
+        .navbar {
+            background-color: var(--color-white);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-dark);
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: var(--color-dark);
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .contact-icon {
+            font-size: 20px;
+            text-decoration: none;
+            color: var(--color-primary);
+            margin-left: 20px;
+        }
+
+        /* --- Sección Principal (Hero) --- */
+        .hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 10%;
+            color: var(--color-dark);
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+            background: linear-gradient(to right, rgba(240, 240, 240, 0.9), rgba(255, 255, 255, 0.5)), url('https://images.unsplash.com/photo-1549923746-c50e0d5a32b2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            /* La URL de la imagen es solo un ejemplo, puedes cambiarla. */
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        /* --- Sección de Planes de Consultoría --- */
+        .plans-section {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .plans-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--color-dark);
+        }
+
+        .plans-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .plan-card {
+            background-color: var(--color-white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .plan-card h3 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            color: var(--color-dark);
+        }
+
+        .plan-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+            min-height: 80px; /* Para mantener la altura similar en todas las tarjetas */
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin: 20px 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">LN</a>
+        <ul class="navbar-links">
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#work">Nuestro Trabajo</a></li>
+            <li><a href="#contact">Contáctanos</a></li>
+            <li><a href="mailto:info@lnasesoria.com" class="contact-icon" title="Envíanos un mensaje">💬</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>LN Asesoría y Consultoría Empresarial</h1>
+        <p>Somos una empresa de consultoría, trabajamos para potenciar el crecimiento de su negocio.</p>
+    </header>
+
+    <section class="plans-section" id="plans">
+        <h2>Nuestros Planes de Consultoría</h2>
+        <p>Elige el plan que mejor se adapte a las necesidades de tu empresa y comienza a transformarla.</p>
+        <div class="plans-container">
+            <div class="plan-card">
+                <h3>Plan Básico</h3>
+                <p>Análisis inicial de procesos, asesoría estratégica para optimizar tu operación y un informe de diagnóstico.</p>
+                <div class="plan-price">$500</div>
+                <a href="#" class="buy-button">Comprar Plan</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>Plan Profesional</h3>
+                <p>Incluye el Plan Básico más seguimiento mensual, talleres de capacitación para tu equipo y consultoría personalizada.</p>
+                <div class="plan-price">$1,500</div>
+                <a href="#" class="buy-button">Comprar Plan</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>Plan Integral</h3>
+                <p>Nuestra solución completa: gestión de proyectos, implementación de herramientas, reingeniería de procesos y soporte continuo.</p>
+                <div class="plan-price">$3,000</div>
+                <a href="#" class="buy-button">Comprar Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 50px; text-align: center; background-color: #eee;">
+        <h2>Contáctanos</h2>
+        <p>Puedes enviarnos un correo electrónico o llamarnos para una consulta.</p>
+        <p>Email: <a href="mailto:info@lnasesoria.com">info@lnasesoria.com</a></p>
+    </section>
+
+</body>
+</html>
