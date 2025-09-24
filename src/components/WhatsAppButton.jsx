@@ -6,7 +6,8 @@ export default function WhatsAppButton({ phone }) {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
+      const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
+      if (scrollY > 300) {
         setIsVisible(true)
       } else {
         setIsVisible(false)
